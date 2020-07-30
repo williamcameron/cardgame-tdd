@@ -24,4 +24,12 @@ describe('Player', () => {
         game.start();
         expect(player.hand.length).toBe(7);
     });
+
+    it('Should have a pokemon in opening hand', () => {
+        const game = new Game();
+        const player = game.players[0];
+        game.start();
+        expect(player.hand).toContainEqual(expect.objectContaining({name:'Pikachu', type:'Pokemon'}));
+    });
+
 });

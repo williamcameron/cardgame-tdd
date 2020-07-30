@@ -8,7 +8,7 @@ describe('Deck', () => {
     });
     it('Should be able to draw a card', () => {
         const deck = new Deck(40);
-        card = deck.draw();
+        const card = deck.draw();
         expect(card).toBeDefined();
         expect(card).toBeInstanceOf(Card);
         expect(deck.cards.length).toBe(39);
