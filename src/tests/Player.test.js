@@ -1,6 +1,6 @@
-const Player = require('../src/Player');
-const Deck = require('../src/Deck');
-const Game = require('../src/Game');
+const Player = require('../Player');
+const Deck = require('../Deck');
+const Game = require('../Game');
 
 describe('Player', () => {
     it('Should be defined', () => {

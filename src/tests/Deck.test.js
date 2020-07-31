@@ -1,5 +1,5 @@
-const Deck = require('../src/Deck');
-const Card = require('../src/Card');
+const Deck = require('../Deck');
+const Card = require('../Card');
 
 describe('Deck', () => {
     it('Should be defined', () => {

@@ -1,4 +1,4 @@
-const Card = require('../src/Card');
+const Card = require('../Card');
 
 describe('Card', () => {
     it('Should be defined', () => {

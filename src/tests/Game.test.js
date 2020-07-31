@@ -1,6 +1,6 @@
 /// <reference types="jest" />
 
-const Game = require('../src/Game');
+const Game = require('../Game');
 
 describe('Game', () => {
     it('Should load a Game', () => {
