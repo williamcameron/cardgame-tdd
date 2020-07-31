@@ -1,10 +1,11 @@
 const Card = require("./Card");
+const POKEMON = require('./constants/pokemon');
 
 class Deck {
     constructor(size=40) {
         this.cards = [];
         for (let i = 0; i < size; i++) {
-            this.cards.push(new Card({name: 'Pikachu', type:'Pokemon'}));
+            this.cards.push(new Card(POKEMON.Pikachu));
             //this.cards.push(new Card({name: 'Grass', type:'Energy'}));
             
         }

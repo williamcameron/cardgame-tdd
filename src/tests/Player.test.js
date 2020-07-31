@@ -1,6 +1,7 @@
 const Player = require('../Player');
 const Deck = require('../Deck');
 const Game = require('../Game');
+const POKEMON = require('../constants/pokemon');
 
 describe('Player', () => {
     it('Should be defined', () => {
@@ -29,7 +30,7 @@ describe('Player', () => {
         const game = new Game();
         const player = game.players[0];
         game.start();
-        expect(player.hand).toContainEqual(expect.objectContaining({name:'Pikachu', type:'Pokemon'}));
+        expect(player.hand).toContainEqual(expect.objectContaining({cardtype: 'Pokemon' }));
     });
 
 });
